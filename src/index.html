@@ -1,0 +1,80 @@
+<!--
+File: index.html
+Author  Krizsicskó Márk
+Copyright: 2024, Krizsicskó Márk
+Group: Szoft I-1-N
+Date: 2024-03-07
+Github: https://github.com/krizsicskomark/
+Licenc: GNU GPL
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozat1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <h1>Húrnégyszög</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Névjegy</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <main>
+                    <h2>Húrnégyszög terület számítása</h2>
+                    <div class="hurnegyszog">
+                        <div class="input">
+                            <label for="a" class="form-label">A oldal</label>
+                            <input type="text" id="a" required class="form-control">
+                        </div>
+                        <div class="input">
+                            <label for="b" class="form-label">B oldal</label>
+                            <input type="text" id="b" required class="form-control">
+                        </div>
+                        <div class="input">
+                            <label for="c" class="form-label">C oldal</label>
+                            <input type="text" id="c" required class="form-control">
+                        </div>
+                        <div class="input">
+                            <label for="d" class="form-label">D oldal</label>
+                            <input type="text" id="d" required class="form-control">
+                        </div>
+                        <div>
+                            <button id="calcButton" class="btn btn-primary" mt-2>Számítás</button>
+                        </div>
+                        <div class="input">
+                            <label for="area">Terület</label>
+                            <input type="text" id="area" readonly class="form-control">
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
